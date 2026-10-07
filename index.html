@@ -3,39 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A master architecture for understanding, learning, teaching, practising and applying language.">
+<meta name="description" content="Master architecture of language skills and language systems, decomposed from the whole to the micro level.">
 <title>Master Language Learning & Teaching Architecture</title>
 <style>
 :root{--ink:#17212b;--muted:#65727e;--line:#dfe5e9;--paper:#fbfcfd;--accent:#294b63;--accent2:#7896a8;--soft:#eef3f6}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;position:relative;overflow:hidden;background:linear-gradient(180deg,#f4f7f8 0%,#fbfcfd 100%)}
-.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #dbe4e9;opacity:.65}.hero:before{width:520px;height:520px;top:-250px;left:-180px}.hero:after{width:680px;height:680px;right:-330px;bottom:-380px}
-.logo{width:72px;height:72px;border:2px solid var(--accent);border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;font-weight:700;letter-spacing:-1px;color:var(--accent);font-size:23px;background:#fff;position:relative;z-index:1}
-.hero h1{max-width:900px;margin:0 auto;font-size:clamp(2.25rem,5vw,4.4rem);line-height:1.05;letter-spacing:-.045em;font-weight:650;position:relative;z-index:1}
-.hero .tagline{margin:24px auto 0;color:var(--muted);font-size:1.05rem;letter-spacing:.04em;position:relative;z-index:1}
-.hero .rule{width:70px;height:2px;background:var(--accent2);margin:30px auto;position:relative;z-index:1}
-.hero .intro{max-width:720px;margin:auto;color:#53616d;position:relative;z-index:1}
-.container{max-width:1180px;margin:auto;padding:70px 24px}
-.section-label{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);font-weight:700}
-h2{font-size:2rem;letter-spacing:-.025em;margin:8px 0 14px} .lead{color:var(--muted);max-width:760px}
-.map{margin-top:38px;border-top:1px solid var(--line)}
-.node{display:grid;grid-template-columns:70px 1fr auto;gap:24px;align-items:center;padding:23px 10px;border-bottom:1px solid var(--line);transition:.2s}
-.node:hover{background:#f5f8fa;padding-left:18px;padding-right:18px}
-.num{font-size:.8rem;color:var(--accent2);font-weight:700;letter-spacing:.08em}.node h3{margin:0;font-size:1.08rem}.node p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.arrow{color:var(--accent);font-size:1.2rem}
-.system{margin-top:80px;padding:48px;background:#f1f5f7;border:1px solid var(--line)}
-.system-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
-.system-card{background:#fff;border:1px solid var(--line);padding:22px}.system-card strong{display:block;margin-bottom:7px}.system-card span{color:var(--muted);font-size:.9rem}
-.nav{position:fixed;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:10}
-.nav a{width:43px;height:43px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--accent);font-size:.72rem;box-shadow:0 5px 18px rgba(20,40,55,.08)}
-.nav a:hover{background:var(--accent);color:#fff}
-footer{text-align:center;border-top:1px solid var(--line);padding:45px 24px;color:var(--muted);font-size:.85rem}
-.footer-mark{font-family:Georgia,serif;font-style:italic;color:var(--accent);font-size:1.05rem}
-@media(max-width:760px){.node{grid-template-columns:48px 1fr 18px;gap:12px}.system-grid{grid-template-columns:1fr}.nav{right:10px}.nav a{width:38px;height:38px}.hero{min-height:68vh}}
+.hero{min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 24px;position:relative;overflow:hidden;background:linear-gradient(180deg,#f4f7f8 0%,#fbfcfd 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #dbe4e9;opacity:.65}.hero:before{width:480px;height:480px;top:-240px;left:-170px}.hero:after{width:620px;height:620px;right:-300px;bottom:-360px}
+.logo{width:68px;height:68px;border:2px solid var(--accent);border-radius:50%;display:grid;place-items:center;margin:0 auto 24px;font-weight:700;letter-spacing:-1px;color:var(--accent);font-size:22px;background:#fff;position:relative;z-index:1}
+.hero h1{max-width:850px;margin:0 auto;font-size:clamp(2.1rem,4.7vw,4rem);line-height:1.06;letter-spacing:-.045em;font-weight:650;position:relative;z-index:1}
+.hero .tagline{margin:20px auto 0;color:var(--muted);font-size:1rem;letter-spacing:.04em;position:relative;z-index:1}.hero .rule{width:60px;height:2px;background:var(--accent2);margin:25px auto;position:relative;z-index:1}
+.hero .intro{max-width:680px;margin:auto;color:#53616d;position:relative;z-index:1}
+.container{max-width:1120px;margin:auto;padding:58px 24px}.section-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);font-weight:700}
+h2{font-size:1.85rem;letter-spacing:-.025em;margin:7px 0 10px}.lead{color:var(--muted);max-width:760px}
+.toc{margin-top:30px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}
+.toc a{display:flex;gap:16px;align-items:center;padding:15px 14px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);transition:.2s}
+.toc a:nth-child(odd){border-right:1px solid var(--line)}.toc a:hover{background:#f3f7f9;padding-left:20px}
+.toc-num{font-size:.73rem;color:var(--accent2);font-weight:700;min-width:28px}.toc-title{font-size:.94rem}.toc-arrow{margin-left:auto;color:var(--accent)}
+.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.choice{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);padding:30px;transition:.2s;position:relative}
+.choice:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(20,40,55,.07);border-color:#c8d5dc}
+.choice-num{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2);font-weight:700}.choice h3{font-size:1.45rem;margin:7px 0}.choice p{margin:0;color:var(--muted);font-size:.92rem}.choice .go{display:inline-block;margin-top:18px;color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.04em}
+.logic{margin-top:58px;background:#f1f5f7;border:1px solid var(--line);padding:34px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:22px}.chain span{background:#fff;border:1px solid var(--line);padding:8px 12px;font-size:.78rem;font-weight:600}.chain b{color:var(--accent2);font-weight:500}
+.nav{position:fixed;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:10}
+.nav a{width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--accent);font-size:.68rem;box-shadow:0 5px 18px rgba(20,40,55,.08)}.nav a:hover{background:var(--accent);color:#fff}
+footer{text-align:center;border-top:1px solid var(--line);padding:40px 24px;color:var(--muted);font-size:.82rem}.footer-mark{font-family:Georgia,serif;font-style:italic;color:var(--accent);font-size:1.02rem}
+@media(max-width:760px){.toc,.choice-grid{grid-template-columns:1fr}.toc a:nth-child(odd){border-right:0}.hero{min-height:60vh}.nav{right:10px}.nav a{width:38px;height:38px}}
 </style>
 </head>
 <body id="top">
 <nav class="nav" aria-label="Page navigation">
-<a href="#top" title="Home">MB</a><a href="#map" title="Master Map">MAP</a><a href="#system" title="System">SYS</a><a href="#top" title="Back to top">↑</a>
+<a href="#top" title="Home">MB</a><a href="#toc" title="Contents">MAP</a><a href="#branches" title="Two main branches">A/B</a><a href="#top" title="Back to top">↑</a>
 </nav>
 
 <header class="hero">
@@ -43,49 +42,52 @@ footer{text-align:center;border-top:1px solid var(--line);padding:45px 24px;colo
 <div class="logo">MB</div>
 <h1>Master Language Learning<br>&amp; Teaching Architecture</h1>
 <div class="rule"></div>
-<p class="tagline">Where Language Learning Becomes a System.</p>
-<p class="intro">A complete architecture for understanding what language is, how it is learned, how it is taught, how it is processed, and how knowledge becomes real-world performance.</p>
+<p class="tagline">From the Whole Language System to the Smallest Trainable Unit.</p>
+<p class="intro">A master architecture that separates <strong>Language Skills</strong> from <strong>Language Systems</strong>, then recursively decomposes each branch from the whole to the micro level.</p>
 </div>
 </header>
 
 <main>
-<section class="container" id="map">
-<div class="section-label">01 · Master Learning Map</div>
-<h2>The Architecture at a Glance</h2>
-<p class="lead">This is the master route. We begin with the nature of language, move through knowledge and skills, then examine processing, learning, practice, performance, transfer and integration.</p>
-<div class="map">
-<div class="node"><div class="num">01</div><div><h3>Language Foundations</h3><p>What language is made of and how form, meaning, function and context interact.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">02</div><div><h3>Language Knowledge Systems</h3><p>The knowledge a learner needs to understand and construct language.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">03</div><div><h3>Receptive Skills</h3><p>Reading and listening from perception to interpretation and critical understanding.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">04</div><div><h3>Productive Skills</h3><p>Speaking and writing from idea generation to coherent, effective expression.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">05</div><div><h3>Language Formation &amp; Control</h3><p>How learners build, select, monitor and control language forms in use.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">06</div><div><h3>Communication &amp; Discourse</h3><p>How language operates across turns, texts, conversations and larger discourse.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">07</div><div><h3>Pronunciation &amp; Spoken Language</h3><p>Sound, stress, rhythm, intonation, connected speech and spoken delivery.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">08</div><div><h3>Vocabulary &amp; Lexical System</h3><p>Words, word families, collocation, lexical patterns, retrieval and use.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">09</div><div><h3>Grammar &amp; Sentence System</h3><p>Form, structure, choice, meaning, function and grammatical control.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">10</div><div><h3>Meaning &amp; Pragmatics</h3><p>Intention, implication, context, politeness, stance and communicative meaning.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">11</div><div><h3>Processing &amp; Real-Time Performance</h3><p>Attention, retrieval, formulation, monitoring, fluency and cognitive load.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">12</div><div><h3>Learning &amp; Acquisition Systems</h3><p>How language develops through exposure, interaction, practice and experience.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">13</div><div><h3>Noticing · Memory · Retrieval</h3><p>How language becomes noticed, encoded, stored, retrieved and made available.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">14</div><div><h3>Practice · Feedback · Correction</h3><p>How performance is shaped through deliberate practice and useful feedback.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">15</div><div><h3>Automaticity · Fluency · Accuracy</h3><p>How controlled knowledge becomes faster, more stable and more reliable.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">16</div><div><h3>Transfer &amp; Real-World Use</h3><p>Moving learning into meetings, writing, study, work and authentic communication.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">17</div><div><h3>Metacognition &amp; Self-Directed Learning</h3><p>Planning, monitoring, diagnosing, reflecting and directing one's own development.</p></div><div class="arrow">→</div></div>
-<div class="node"><div class="num">18</div><div><h3>Integration</h3><p>Connecting every system into one coherent language-learning and teaching architecture.</p></div><div class="arrow">→</div></div>
+<section class="container" id="toc">
+<div class="section-label">01 · Master Table of Contents</div>
+<h2>Explore the Architecture</h2>
+<p class="lead">The homepage is only the gateway. Detailed analysis begins inside each branch; nothing is expanded to micro-level here.</p>
+<div class="toc">
+<a href="#branches"><span class="toc-num">A</span><span class="toc-title">Language Skills</span><span class="toc-arrow">→</span></a>
+<a href="#branches"><span class="toc-num">B</span><span class="toc-title">Language Systems</span><span class="toc-arrow">→</span></a>
+<a href="#logic"><span class="toc-num">01</span><span class="toc-title">Architecture &amp; Decomposition Logic</span><span class="toc-arrow">→</span></a>
+<a href="#logic"><span class="toc-num">02</span><span class="toc-title">From Whole → Micro</span><span class="toc-arrow">→</span></a>
 </div>
 </section>
 
-<section class="container system" id="system">
-<div class="section-label">02 · Architecture Logic</div>
-<h2>How We Will Build It</h2>
-<p class="lead">We will not treat these eighteen areas as simple topics. Each one will be recursively decomposed and then converted into a learning and teaching system.</p>
-<div class="system-grid">
-<div class="system-card"><strong>DOMAIN</strong><span>The broad territory of language.</span></div>
-<div class="system-card"><strong>SYSTEM</strong><span>A major functional system within the domain.</span></div>
-<div class="system-card"><strong>SKILL</strong><span>A teachable and learnable capability.</span></div>
-<div class="system-card"><strong>SUB-SKILL</strong><span>A distinct component of a larger skill.</span></div>
-<div class="system-card"><strong>MICRO-SKILL</strong><span>A precise observable ability.</span></div>
-<div class="system-card"><strong>COMPONENT → MICRO-COMPONENT</strong><span>The finest operational level needed for analysis and training.</span></div>
+<section class="container" id="branches">
+<div class="section-label">02 · The Two Core Branches</div>
+<h2>Two Separate Maps</h2>
+<p class="lead">The distinction is fundamental: skills describe what the learner can <strong>do</strong> with language; systems describe the language resources and mechanisms that make that performance possible.</p>
+<div class="choice-grid">
+<a class="choice" href="skills/index.html">
+<div class="choice-num">Branch A</div>
+<h3>Language Skills</h3>
+<p>Reading · Listening · Speaking · Writing and every sub-skill, micro-skill and observable performance underneath them.</p>
+<span class="go">OPEN SKILLS MAP →</span>
+</a>
+<a class="choice" href="systems/index.html">
+<div class="choice-num">Branch B</div>
+<h3>Language Systems</h3>
+<p>Phonology · Lexis · Grammar · Semantics · Pragmatics · Discourse · Orthography and their complete internal architecture.</p>
+<span class="go">OPEN SYSTEMS MAP →</span>
+</a>
+</div>
+</section>
+
+<section class="container" id="logic">
+<div class="logic">
+<div class="section-label">03 · Decomposition Logic</div>
+<h2>How We Go from the Whole to the Micro</h2>
+<p class="lead">Every branch is expanded recursively. We do not jump from a broad label directly to random details.</p>
+<div class="chain">
+<span>DOMAIN</span><b>→</b><span>SYSTEM</span><b>→</b><span>SKILL</span><b>→</b><span>SUB-SKILL</span><b>→</b><span>MICRO-SKILL</span><b>→</b><span>COMPONENT</span><b>→</b><span>MICRO-COMPONENT</span><b>→</b><span>PROCESS</span><b>→</b><span>TRAINABLE UNIT</span>
+</div>
 </div>
 </section>
 </main>
