@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Phonological System · Master Architecture</title>
+<style>
+:root{--i:#17212b;--m:#65727e;--l:#dfe5e9;--a:#294b63;--s:#eef3f6;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--i);background:#fbfcfd;line-height:1.6}
+.hero{padding:62px 24px 42px;text-align:center;background:#f4f7f8;border-bottom:1px solid var(--l)}
+.hero .mark{margin:auto;width:58px;height:58px;border:2px solid var(--a);border-radius:50%;display:grid;place-items:center;color:var(--a);font-weight:700}
+.hero h1{font-size:clamp(2rem,4vw,3.2rem);margin:18px 0 8px;letter-spacing:-.04em}
+.hero p{max-width:760px;margin:auto;color:var(--m)}
+.wrap{max-width:1080px;margin:auto;padding:48px 24px 70px}
+.label{font-size:.7rem;letter-spacing:.18em;color:#7896a8;font-weight:700}
+.lesson{margin:12px 0 42px;padding:24px 26px;background:var(--s);border:1px solid var(--l)}
+.lesson strong{color:var(--a)}
+.lesson .route{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.route span{background:#fff;border:1px solid var(--l);padding:7px 10px;font-size:.76rem;font-weight:600}
+.map{margin-top:18px;border-top:1px solid var(--l)}
+.item{display:grid;grid-template-columns:50px 1fr;gap:16px;padding:18px 10px;border-bottom:1px solid var(--l)}
+.num{color:#7896a8;font-size:.74rem;font-weight:700}
+.item h2{margin:0;font-size:1.05rem}.item p{margin:3px 0 0;color:var(--m);font-size:.9rem}
+.zoom{margin-top:42px}.zoomgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--l);padding:18px}.card h3{margin:0 0 5px;font-size:.98rem}.card p{margin:0;color:var(--m);font-size:.86rem}
+.logic{margin-top:42px;padding:25px;background:var(--s);border:1px solid var(--l)}
+footer{text-align:center;padding:32px;border-top:1px solid var(--l);color:var(--m)}
+.global-logo{position:fixed;right:22px;top:18px;z-index:9999;width:48px;height:48px;border:2px solid var(--a);border-radius:50%;background:#fff;color:var(--a);display:grid;place-items:center;text-decoration:none;font-weight:700;font-size:.82rem;box-shadow:0 5px 18px rgba(20,40,55,.10)}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:9999;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--a);font-size:1rem;box-shadow:0 5px 18px rgba(20,40,55,.10)}
+.nav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:9999}
+.nav a{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--a);font-size:.62rem;font-weight:700;box-shadow:0 5px 18px rgba(20,40,55,.12)}
+.nav a:hover,.global-logo:hover,.back-top:hover{background:var(--a);color:#fff}
+@media(max-width:700px){.nav{right:8px}.nav a{width:40px;height:40px}.global-logo{right:12px;top:12px;width:42px;height:42px}.back-top{left:12px;bottom:12px;width:40px;height:40px}.zoomgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+<a class="global-logo" href="../../index.html" title="Home">MB</a>
+<a class="back-top" href="#top" title="Back to top">↑</a>
+<nav class="nav" aria-label="Page navigation">
+<a href="../../index.html">HOME</a>
+<a href="../index.html">SYS</a>
+<a href="#map">MAP</a>
+<a href="../index.html">←</a>
+<a href="../lexical/index.html">→</a>
+</nav>
+
+<header class="hero">
+<div class="mark">MB</div>
+<h1>Phonological System</h1>
+<p>The sound system of a language: how speech sounds are organised, contrasted, combined, stressed, timed and delivered.</p>
+</header>
+
+<main class="wrap">
+<section class="lesson">
+<div class="label">00 · LEARNING MAP</div>
+<h2>Where are we going?</h2>
+<p><strong>Start:</strong> understand the phonological system as a complete structure.</p>
+<p><strong>End:</strong> identify its components, trace how they operate in speech, and locate the smallest trainable units for pronunciation and listening development.</p>
+<div class="route">
+<span>System</span><span>→</span><span>Components</span><span>→</span><span>Processes</span><span>→</span><span>Mechanisms</span><span>→</span><span>Trainable Units</span>
+</div>
+</section>
+
+<section id="map">
+<div class="label">01 · SYSTEM MASTER MAP</div>
+<h2>Phonological System → Micro-Level</h2>
+<div class="map">
+<div class="item"><div class="num">01</div><div><h2>Sound Inventory</h2><p>Phonemes, consonants, vowels, contrasts and the organisation of the sound inventory.</p></div></div>
+<div class="item"><div class="num">02</div><div><h2>Syllable System</h2><p>Syllable structure, onset, nucleus, coda, syllable boundaries and permissible combinations.</p></div></div>
+<div class="item"><div class="num">03</div><div><h2>Word Stress</h2><p>Stress placement, prominence, stressed and unstressed syllables, and lexical stress patterns.</p></div></div>
+<div class="item"><div class="num">04</div><div><h2>Rhythm & Timing</h2><p>Speech timing, prominence patterns, reduction and the organisation of strong and weak elements.</p></div></div>
+<div class="item"><div class="num">05</div><div><h2>Intonation & Prosody</h2><p>Pitch movement, sentence-level prominence, phrasing, boundaries and intonational meaning.</p></div></div>
+<div class="item"><div class="num">06</div><div><h2>Connected Speech</h2><p>Linking, assimilation, elision, weak forms, reductions and sound changes across word boundaries.</p></div></div>
+<div class="item"><div class="num">07</div><div><h2>Phonotactics</h2><p>Rules and constraints governing which sound sequences can occur in a language.</p></div></div>
+<div class="item"><div class="num">08</div><div><h2>Phonological Variation</h2><p>Allophony, contextual variation, accent-related variation and other systematic sound differences.</p></div></div>
+</div>
+</section>
+
+<section class="zoom">
+<div class="label">02 · DECOMPOSITION STAGES</div>
+<h2>How the System Is Analysed</h2>
+<div class="zoomgrid">
+<div class="card"><h3>COMPONENT</h3><p>A major part of the phonological system, such as syllables, stress or intonation.</p></div>
+<div class="card"><h3>SUB-COMPONENT</h3><p>A more specific structure inside a component, such as onset–nucleus–coda within syllable structure.</p></div>
+<div class="card"><h3>PROCESS</h3><p>What happens during perception or production, such as linking or reduction.</p></div>
+<div class="card"><h3>MECHANISM</h3><p>The underlying phonological operation that produces an observable pattern.</p></div>
+<div class="card"><h3>MICRO-COMPONENT</h3><p>The smallest identifiable feature or contrast worth analysing separately.</p></div>
+<div class="card"><h3>TRAINABLE UNIT</h3><p>A teachable and measurable unit for perception, pronunciation or spoken production.</p></div>
+</div>
+</section>
+
+<section class="logic">
+<div class="label">03 · CORE ARCHITECTURE</div>
+<h2>Phonological System Zoom-In</h2>
+<p><strong>PHONOLOGICAL SYSTEM</strong> → Sound Inventory → Syllable Structure → Stress → Rhythm → Intonation → Connected Speech → Phonotactics → Variation → Processes → Mechanisms → Trainable Units</p>
+</section>
+</main>
+
+<footer>𝓓𝓸𝓷 𝓠𝓾𝓲𝔁𝓸𝓽𝓮 · Keep Learning. Keep Questioning.</footer>
+</body>
+</html>
