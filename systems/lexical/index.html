@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Lexical System · Master Architecture</title>
+<style>
+:root{--i:#17212b;--m:#65727e;--l:#dfe5e9;--a:#294b63;--s:#eef3f6;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--i);background:#fbfcfd;line-height:1.6}
+.hero{padding:62px 24px 42px;text-align:center;background:#f4f7f8;border-bottom:1px solid var(--l)}
+.hero .mark{margin:auto;width:58px;height:58px;border:2px solid var(--a);border-radius:50%;display:grid;place-items:center;color:var(--a);font-weight:700}
+.hero h1{font-size:clamp(2rem,4vw,3.2rem);margin:18px 0 8px;letter-spacing:-.04em}
+.hero p{max-width:760px;margin:auto;color:var(--m)}
+.wrap{max-width:1080px;margin:auto;padding:48px 24px 70px}
+.label{font-size:.7rem;letter-spacing:.18em;color:#7896a8;font-weight:700}
+.lesson{margin:12px 0 42px;padding:24px 26px;background:var(--s);border:1px solid var(--l)}
+.lesson strong{color:var(--a)}
+.lesson .route{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.route span{background:#fff;border:1px solid var(--l);padding:7px 10px;font-size:.76rem;font-weight:600}
+.map{margin-top:18px;border-top:1px solid var(--l)}
+.item{display:grid;grid-template-columns:50px 1fr;gap:16px;padding:18px 10px;border-bottom:1px solid var(--l)}
+.num{color:#7896a8;font-size:.74rem;font-weight:700}
+.item h2{margin:0;font-size:1.05rem}.item p{margin:3px 0 0;color:var(--m);font-size:.9rem}
+.zoom{margin-top:42px}.zoomgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--l);padding:18px}.card h3{margin:0 0 5px;font-size:.98rem}.card p{margin:0;color:var(--m);font-size:.86rem}
+.logic{margin-top:42px;padding:25px;background:var(--s);border:1px solid var(--l)}
+.global-logo{position:fixed;right:22px;top:18px;z-index:9999;width:48px;height:48px;border:2px solid var(--a);border-radius:50%;background:#fff;color:var(--a);display:grid;place-items:center;text-decoration:none;font-weight:700;font-size:.82rem;box-shadow:0 5px 18px rgba(20,40,55,.10)}
+.back-top{position:fixed;left:20px;bottom:20px;z-index:9999;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--a);font-size:1rem;box-shadow:0 5px 18px rgba(20,40,55,.10)}
+.nav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:9999}
+.nav a{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--a);font-size:.62rem;font-weight:700;box-shadow:0 5px 18px rgba(20,40,55,.12)}
+.nav a:hover,.global-logo:hover,.back-top:hover{background:var(--a);color:#fff}
+@media(max-width:700px){.nav{right:8px}.nav a{width:40px;height:40px}.global-logo{right:12px;top:12px;width:42px;height:42px}.back-top{left:12px;bottom:12px;width:40px;height:40px}.zoomgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+<a class="global-logo" href="../../index.html" title="Home">MB</a>
+<a class="back-top" href="#top" title="Back to top">↑</a>
+<nav class="nav" aria-label="Page navigation">
+<a href="../../index.html">HOME</a>
+<a href="../index.html">SYS</a>
+<a href="../../skills/index.html">SK</a>
+<a href="#lexical-knowledge">01</a>
+<a href="#word-formation">02</a>
+<a href="#lexical-relations">03</a>
+<a href="#collocation">04</a>
+<a href="#multiword-units">05</a>
+<a href="#lexical-grammar">06</a>
+<a href="#meaning-context">07</a>
+<a href="#register-variation">08</a>
+<a href="#lexical-access">09</a>
+</nav>
+
+<header class="hero">
+<div class="mark">MB</div>
+<h1>Lexical System</h1>
+<p>The system through which words and multi-word units are formed, organised, related, combined, interpreted and accessed in communication.</p>
+</header>
+
+<main class="wrap">
+
+<section class="lesson">
+<div class="label">00 · LEARNING MAP</div>
+<h2>Where are we going?</h2>
+<p><strong>Start:</strong> understand the lexical system as more than a list of vocabulary items.</p>
+<p><strong>End:</strong> identify how lexical knowledge is structured, how words combine and change, how meaning and register interact with context, and how lexical knowledge becomes usable in real-time communication.</p>
+<div class="route">
+<span>System</span><span>→</span><span>Components</span><span>→</span><span>Relations</span><span>→</span><span>Processes</span><span>→</span><span>Mechanisms</span><span>→</span><span>Trainable Units</span>
+</div>
+</section>
+
+<section>
+<div class="label">01 · SYSTEM MASTER ARCHITECTURE</div>
+<h2>Lexical System → Micro-Level</h2>
+<div class="map">
+<div class="item"><div class="num">01</div><div><h2 id="lexical-knowledge">Lexical Knowledge</h2><p>Word identity, lexical entries, forms, meanings, grammatical category and the information stored with a lexical item.</p></div></div>
+<div class="item"><div class="num">02</div><div><h2 id="word-formation">Word Formation</h2><p>Derivation, compounding, inflectional relationships and other processes through which lexical forms are created or related.</p></div></div>
+<div class="item"><div class="num">03</div><div><h2 id="lexical-relations">Lexical Relations</h2><p>Synonymy, antonymy, hyponymy, meronymy, polysemy and other relationships within the lexical network.</p></div></div>
+<div class="item"><div class="num">04</div><div><h2 id="collocation">Collocation</h2><p>Words that conventionally occur together, including lexical preferences, common combinations and restricted combinations.</p></div></div>
+<div class="item"><div class="num">05</div><div><h2 id="multiword-units">Multi-Word Units</h2><p>Idioms, phrasal verbs, fixed expressions, lexical bundles, formulaic sequences and other recurring multi-word patterns.</p></div></div>
+<div class="item"><div class="num">06</div><div><h2 id="lexical-grammar">Lexical–Grammatical Interface</h2><p>How lexical choices interact with complementation, prepositions, argument structure, word class and grammatical patterns.</p></div></div>
+<div class="item"><div class="num">07</div><div><h2 id="meaning-context">Lexical Meaning & Context</h2><p>Context-sensitive meaning, sense selection, semantic extension, connotation and the interpretation of lexical items in discourse.</p></div></div>
+<div class="item"><div class="num">08</div><div><h2 id="register-variation">Register & Lexical Variation</h2><p>Formal and informal choices, spoken and written preferences, domain-specific vocabulary, dialectal variation and stylistic choice.</p></div></div>
+<div class="item"><div class="num">09</div><div><h2 id="lexical-access">Lexical Access & Retrieval</h2><p>How lexical knowledge is recognised, retrieved, selected and produced during real-time language use.</p></div></div>
+</div>
+</section>
+
+<section class="zoom">
+<div class="label">02 · DECOMPOSITION STAGES</div>
+<h2>How the Lexical System Is Analysed</h2>
+<div class="zoomgrid">
+<div class="card"><h3>COMPONENT</h3><p>A major part of lexical knowledge, such as word formation, collocation or lexical relations.</p></div>
+<div class="card"><h3>SUB-COMPONENT</h3><p>A more specific structure inside a component, such as derivational morphology within word formation.</p></div>
+<div class="card"><h3>PROCESS</h3><p>An operation involving lexical knowledge, such as word formation, sense selection or retrieval.</p></div>
+<div class="card"><h3>MECHANISM</h3><p>The underlying relationship or operation that makes a lexical pattern possible.</p></div>
+<div class="card"><h3>MICRO-COMPONENT</h3><p>A small, identifiable lexical feature or relationship that can be analysed independently.</p></div>
+<div class="card"><h3>TRAINABLE UNIT</h3><p>A teachable and measurable unit, such as a collocation, word-building pattern, lexical frame or retrieval task.</p></div>
+</div>
+</section>
+
+<section class="logic">
+<div class="label">03 · CORE ARCHITECTURE</div>
+<h2>Lexical System Zoom-In</h2>
+<p><strong>LEXICAL SYSTEM</strong> → Lexical Knowledge → Word Formation → Lexical Relations → Collocation → Multi-Word Units → Lexical–Grammar Interface → Meaning & Context → Register & Variation → Lexical Access → Processes → Mechanisms → Trainable Units</p>
+</section>
+
+</main>
+
+<footer>𝓓𝓸𝓷 𝓠𝓾𝓲𝔁𝓸𝓽𝓮 · Keep Learning. Keep Questioning.</footer>
+</body>
+</html>
