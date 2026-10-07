@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master Language Learning & Teaching Architecture</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A master architecture for understanding, learning, teaching, practising and applying language.">
+<title>Master Language Learning & Teaching Architecture</title>
+<style>
+:root{--ink:#17212b;--muted:#65727e;--line:#dfe5e9;--paper:#fbfcfd;--accent:#294b63;--accent2:#7896a8;--soft:#eef3f6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;position:relative;overflow:hidden;background:linear-gradient(180deg,#f4f7f8 0%,#fbfcfd 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #dbe4e9;opacity:.65}.hero:before{width:520px;height:520px;top:-250px;left:-180px}.hero:after{width:680px;height:680px;right:-330px;bottom:-380px}
+.logo{width:72px;height:72px;border:2px solid var(--accent);border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;font-weight:700;letter-spacing:-1px;color:var(--accent);font-size:23px;background:#fff;position:relative;z-index:1}
+.hero h1{max-width:900px;margin:0 auto;font-size:clamp(2.25rem,5vw,4.4rem);line-height:1.05;letter-spacing:-.045em;font-weight:650;position:relative;z-index:1}
+.hero .tagline{margin:24px auto 0;color:var(--muted);font-size:1.05rem;letter-spacing:.04em;position:relative;z-index:1}
+.hero .rule{width:70px;height:2px;background:var(--accent2);margin:30px auto;position:relative;z-index:1}
+.hero .intro{max-width:720px;margin:auto;color:#53616d;position:relative;z-index:1}
+.container{max-width:1180px;margin:auto;padding:70px 24px}
+.section-label{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);font-weight:700}
+h2{font-size:2rem;letter-spacing:-.025em;margin:8px 0 14px} .lead{color:var(--muted);max-width:760px}
+.map{margin-top:38px;border-top:1px solid var(--line)}
+.node{display:grid;grid-template-columns:70px 1fr auto;gap:24px;align-items:center;padding:23px 10px;border-bottom:1px solid var(--line);transition:.2s}
+.node:hover{background:#f5f8fa;padding-left:18px;padding-right:18px}
+.num{font-size:.8rem;color:var(--accent2);font-weight:700;letter-spacing:.08em}.node h3{margin:0;font-size:1.08rem}.node p{margin:4px 0 0;color:var(--muted);font-size:.92rem}.arrow{color:var(--accent);font-size:1.2rem}
+.system{margin-top:80px;padding:48px;background:#f1f5f7;border:1px solid var(--line)}
+.system-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.system-card{background:#fff;border:1px solid var(--line);padding:22px}.system-card strong{display:block;margin-bottom:7px}.system-card span{color:var(--muted);font-size:.9rem}
+.nav{position:fixed;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:10}
+.nav a{width:43px;height:43px;border-radius:50%;background:#fff;border:1px solid #d7e0e5;display:grid;place-items:center;text-decoration:none;color:var(--accent);font-size:.72rem;box-shadow:0 5px 18px rgba(20,40,55,.08)}
+.nav a:hover{background:var(--accent);color:#fff}
+footer{text-align:center;border-top:1px solid var(--line);padding:45px 24px;color:var(--muted);font-size:.85rem}
+.footer-mark{font-family:Georgia,serif;font-style:italic;color:var(--accent);font-size:1.05rem}
+@media(max-width:760px){.node{grid-template-columns:48px 1fr 18px;gap:12px}.system-grid{grid-template-columns:1fr}.nav{right:10px}.nav a{width:38px;height:38px}.hero{min-height:68vh}}
+</style>
 </head>
-<body>
-  <main>
-    <h1>Master Language Learning & Teaching Architecture</h1>
-    <p>Where Language Learning Becomes a System.</p>
-  </main>
+<body id="top">
+<nav class="nav" aria-label="Page navigation">
+<a href="#top" title="Home">MB</a><a href="#map" title="Master Map">MAP</a><a href="#system" title="System">SYS</a><a href="#top" title="Back to top">↑</a>
+</nav>
+
+<header class="hero">
+<div>
+<div class="logo">MB</div>
+<h1>Master Language Learning<br>&amp; Teaching Architecture</h1>
+<div class="rule"></div>
+<p class="tagline">Where Language Learning Becomes a System.</p>
+<p class="intro">A complete architecture for understanding what language is, how it is learned, how it is taught, how it is processed, and how knowledge becomes real-world performance.</p>
+</div>
+</header>
+
+<main>
+<section class="container" id="map">
+<div class="section-label">01 · Master Learning Map</div>
+<h2>The Architecture at a Glance</h2>
+<p class="lead">This is the master route. We begin with the nature of language, move through knowledge and skills, then examine processing, learning, practice, performance, transfer and integration.</p>
+<div class="map">
+<div class="node"><div class="num">01</div><div><h3>Language Foundations</h3><p>What language is made of and how form, meaning, function and context interact.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">02</div><div><h3>Language Knowledge Systems</h3><p>The knowledge a learner needs to understand and construct language.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">03</div><div><h3>Receptive Skills</h3><p>Reading and listening from perception to interpretation and critical understanding.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">04</div><div><h3>Productive Skills</h3><p>Speaking and writing from idea generation to coherent, effective expression.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">05</div><div><h3>Language Formation &amp; Control</h3><p>How learners build, select, monitor and control language forms in use.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">06</div><div><h3>Communication &amp; Discourse</h3><p>How language operates across turns, texts, conversations and larger discourse.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">07</div><div><h3>Pronunciation &amp; Spoken Language</h3><p>Sound, stress, rhythm, intonation, connected speech and spoken delivery.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">08</div><div><h3>Vocabulary &amp; Lexical System</h3><p>Words, word families, collocation, lexical patterns, retrieval and use.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">09</div><div><h3>Grammar &amp; Sentence System</h3><p>Form, structure, choice, meaning, function and grammatical control.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">10</div><div><h3>Meaning &amp; Pragmatics</h3><p>Intention, implication, context, politeness, stance and communicative meaning.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">11</div><div><h3>Processing &amp; Real-Time Performance</h3><p>Attention, retrieval, formulation, monitoring, fluency and cognitive load.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">12</div><div><h3>Learning &amp; Acquisition Systems</h3><p>How language develops through exposure, interaction, practice and experience.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">13</div><div><h3>Noticing · Memory · Retrieval</h3><p>How language becomes noticed, encoded, stored, retrieved and made available.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">14</div><div><h3>Practice · Feedback · Correction</h3><p>How performance is shaped through deliberate practice and useful feedback.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">15</div><div><h3>Automaticity · Fluency · Accuracy</h3><p>How controlled knowledge becomes faster, more stable and more reliable.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">16</div><div><h3>Transfer &amp; Real-World Use</h3><p>Moving learning into meetings, writing, study, work and authentic communication.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">17</div><div><h3>Metacognition &amp; Self-Directed Learning</h3><p>Planning, monitoring, diagnosing, reflecting and directing one's own development.</p></div><div class="arrow">→</div></div>
+<div class="node"><div class="num">18</div><div><h3>Integration</h3><p>Connecting every system into one coherent language-learning and teaching architecture.</p></div><div class="arrow">→</div></div>
+</div>
+</section>
+
+<section class="container system" id="system">
+<div class="section-label">02 · Architecture Logic</div>
+<h2>How We Will Build It</h2>
+<p class="lead">We will not treat these eighteen areas as simple topics. Each one will be recursively decomposed and then converted into a learning and teaching system.</p>
+<div class="system-grid">
+<div class="system-card"><strong>DOMAIN</strong><span>The broad territory of language.</span></div>
+<div class="system-card"><strong>SYSTEM</strong><span>A major functional system within the domain.</span></div>
+<div class="system-card"><strong>SKILL</strong><span>A teachable and learnable capability.</span></div>
+<div class="system-card"><strong>SUB-SKILL</strong><span>A distinct component of a larger skill.</span></div>
+<div class="system-card"><strong>MICRO-SKILL</strong><span>A precise observable ability.</span></div>
+<div class="system-card"><strong>COMPONENT → MICRO-COMPONENT</strong><span>The finest operational level needed for analysis and training.</span></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-mark">𝓓𝓸𝓷 𝓠𝓾𝓲𝔁𝓸𝓽𝓮</div>
+<div>Keep Learning. Keep Questioning.</div>
+</footer>
 </body>
 </html>
